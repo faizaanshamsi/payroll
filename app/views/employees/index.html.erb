@@ -1,1 +1,7 @@
+<%= link_to 'go to sales', sales_path %>
 <p>List your employees here</p>
+
+<% @people.each do |x| %>
+  <%= "#{x.name}" %>
+  <br>
+<% end %>

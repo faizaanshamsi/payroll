@@ -1,1 +1,7 @@
-<p>List your sales here</p>
+<%= link_to 'go to employees', employees_path %>
+<br>
+
+<% @sales.sales_data.each do |k, v| %>
+  <%= "#{k['last_name']} had sales of $#{k['gross_sale_value']}" %>
+  <br>
+<% end %>
